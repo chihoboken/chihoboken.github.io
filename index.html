@@ -29,8 +29,8 @@
 </head>
 <body ng-app="chihobPhotoShowroom">
     <div ng-controller="indexController">
-        <h2 style="text-align: center; margin: 15px">CHIHOBOKEN -- My Timelapse Videos</h2>
-        <h4 style="text-align: center; margin: 15px">Last Updated: {{siteLastUpdated}}</h4>
+        <h2 style="text-align: center; margin: 15px">chihoboken - Timelapse Compilation</h2>
+        <h4 style="text-align: center; margin: 15px">{{timelapseViewModel.length}} videos as of {{siteLastUpdated}}</h4>
         <h4 style="text-align: center; margin: 15px; display: none">Filter video by location: <select style="width: 250px" ng-model="filteredCity" ng-options="city as city for city in allCities"></select></h4>
         <div class="container" style="width: 90% !important">
             <div class="row">

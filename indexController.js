@@ -1,7 +1,63 @@
 ﻿angular.module('chihobPhotoShowroom', [])
   .controller('indexController', ['$scope', function ($scope) {
-      $scope.siteLastUpdated = "12/31/2016";
+      $scope.siteLastUpdated = "07/15/2017";
       $scope.timelapseViewModel = [
+          {
+              MediaUrl: "https://www.instagram.com/p/BWJjIAegswK/",
+              MediaLocationDetail: "Weehawken Cove",
+              MediaLocationCity: "Hoboken",
+              MediaLocationState: "NJ",
+              MediaDate: "07/04/2017"
+          },
+          {
+              MediaUrl: "https://www.instagram.com/p/BVyZdQsgTKR/",
+              MediaLocationDetail: "Sheraton Lincoln Harbor",
+              MediaLocationCity: "Weehawken",
+              MediaLocationState: "NJ",
+              MediaDate: "06/25/2017"
+          },
+          {
+              MediaUrl: "https://www.instagram.com/p/BUF4UyFg8Cw/",
+              MediaLocationDetail: "Maxwell Park",
+              MediaLocationCity: "Hoboken",
+              MediaLocationState: "NJ",
+              MediaDate: "05/14/2017"
+          },
+          {
+              MediaUrl: "https://www.instagram.com/p/BSz3cJagfrM/",
+              MediaLocationDetail: "14th Street Ferry Terminal",
+              MediaLocationCity: "Hoboken",
+              MediaLocationState: "NJ",
+              MediaDate: "04/12/2017"
+          },
+          {
+              MediaUrl: "https://www.instagram.com/p/BSXdaThAr-C/",
+              MediaLocationDetail: "Maxwell Park",
+              MediaLocationCity: "Hoboken",
+              MediaLocationState: "NJ",
+              MediaDate: "04/01/2017"
+          },
+          {
+              MediaUrl: "https://www.instagram.com/p/BSFX6wBgKY1/",
+              MediaLocationDetail: "Maxwell Park",
+              MediaLocationCity: "Hoboken",
+              MediaLocationState: "NJ",
+              MediaDate: "03/25/2017"
+          },
+          {
+              MediaUrl: "https://www.instagram.com/p/BQb3Eqrl0uS/",
+              MediaLocationDetail: "Maxwell Park",
+              MediaLocationCity: "Hoboken",
+              MediaLocationState: "NJ",
+              MediaDate: "02/12/2017"
+          },
+          {
+              MediaUrl: "https://www.instagram.com/p/BPwOH5jFMa4/",
+              MediaLocationDetail: "Boulevard East",
+              MediaLocationCity: "West New York",
+              MediaLocationState: "NJ",
+              MediaDate: "01/26/2017"
+          },
           {
               MediaUrl: "https://www.instagram.com/p/BOqQQn4jUld/",
               MediaLocationDetail: "Pier A Park",
