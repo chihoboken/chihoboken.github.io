@@ -1,8 +1,44 @@
 ﻿angular.module('chihobPhotoShowroom', [])
   .controller('indexController', ['$scope', function ($scope) {
-      $scope.siteLastUpdated = "07/15/2017";
+      $scope.siteLastUpdated = "04/07/2018";
       $scope.showAllInstagramMedia = true;
       $scope.timelapseViewModel = [
+		  {
+              mediaUrl: "https://www.instagram.com/p/BfM_4GYgikJ/",
+              mediaLocationDetail: "Waterfront Park and Recreation Center",
+              mediaLocationCity: "Weehawken",
+              mediaLocationState: "NJ",
+              mediaDate: "02/14/2018",
+              showBlock: true,
+              showMedia: true
+          },
+		  {
+              mediaUrl: "https://www.instagram.com/p/Bd6pLoIAaCv/",
+              mediaLocationDetail: "Maxwell Park",
+              mediaLocationCity: "Hoboken",
+              mediaLocationState: "NJ",
+              mediaDate: "01/13/2018",
+              showBlock: true,
+              showMedia: true
+          },
+		  {
+              mediaUrl: "https://www.instagram.com/p/BZz9LqTA6kv/",
+              mediaLocationDetail: "Maxwell Park",
+              mediaLocationCity: "Hoboken",
+              mediaLocationState: "NJ",
+              mediaDate: "10/03/2017",
+              showBlock: true,
+              showMedia: true
+          },
+		  {
+              mediaUrl: "https://www.instagram.com/p/BY2JDRjAfbj/",
+              mediaLocationDetail: "Pier C Park",
+              mediaLocationCity: "Hoboken",
+              mediaLocationState: "NJ",
+              mediaDate: "09/09/2017",
+              showBlock: true,
+              showMedia: true
+          },
           {
               mediaUrl: "https://www.instagram.com/p/BWJjIAegswK/",
               mediaLocationDetail: "Weehawken Cove",
