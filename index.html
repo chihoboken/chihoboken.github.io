@@ -32,7 +32,7 @@
 <body ng-app="chihobPhotoShowroom">
     <div ng-controller="indexController">
         <h2 style="text-align: center; margin: 15px">{{appTitle}}</h2>
-        <h4 style="text-align: center; margin: 15px">{{pictureList.length}} videos as of {{siteLastUpdated}}</h4>
+        <h4 style="text-align: center; margin: 15px">{{pictureList.length}} Photos & Videos as of {{siteLastUpdated}}</h4>
         <h4 style="text-align: center; margin: 15px; display: none">Filter video by location: <select style="width: 250px" ng-model="filteredCity" ng-options="city as city for city in allCities"></select></h4>
         <div class="container" style="width: 90% !important">
             <div class="row">
@@ -43,7 +43,7 @@
                     </div>                    
                     <div style="float: right">
                         <h6>
-							<span ng-if="typeof tl.mediaType != 'undefined'" class="btn btn-xs btn-primary" style="margin-right: 15px">{{tl.mediaType}}</span>
+							<span style="margin-right: 15px">{{tl.mediaType}}</span>
 							<a ng-href="{{tl.mediaUrl}}" target="_blank" class="btn btn-xs btn-primary">View in Instagram</a>
 						</h6>
                     </div>
