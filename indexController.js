@@ -1,8 +1,14 @@
 ﻿angular.module('chihobPhotoShowroom', [])
   .controller('indexController', ['$scope', function ($scope) {
-      $scope.siteLastUpdated = "04/07/2018";
-      $scope.showAllInstagramMedia = true;
-      $scope.timelapseViewModel = [
+	  _.merge($scope, {
+		  siteLastUpdated: "05/28/2018",
+		  showAllInstagramMedia: true,
+		  pictureList: [],
+		  allCities: [],
+		  //filteredCity: ""
+	  });
+	  
+      var timelapseViewModel = [
 		  {
               mediaUrl: "https://www.instagram.com/p/BfM_4GYgikJ/",
               mediaLocationDetail: "Waterfront Park and Recreation Center",
@@ -715,12 +721,12 @@
               showMedia: true
           },
       ];
-
-      $scope.allCities = [];
-      $scope.filteredCity = "";
-      angular.forEach($scope.timelapseViewModel, function (value, key) {
+      $scope.pictureList = timelapseViewModel;
+	  
+      angular.forEach($scope.pictureList, function (value, key) {
           if ($scope.allCities.indexOf(value.mediaLocationCity) == -1) {
               $scope.allCities.push(value.mediaLocationCity);
           }
       });
-  }]);
+  }]
+);
