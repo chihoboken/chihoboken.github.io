@@ -1,6 +1,7 @@
 ﻿angular.module('chihobPhotoShowroom', [])
   .controller('indexController', ['$scope', function ($scope) {
 	  _.merge($scope, {
+		  appTitle: "chihoboken - Timelapse Compilation",
 		  siteLastUpdated: "05/28/2018",
 		  showAllInstagramMedia: true,
 		  pictureList: [],
