@@ -42,7 +42,10 @@
                         <h6>{{tl.mediaLocationCity}}, {{tl.mediaLocationState}} - {{tl.mediaDate}}</h6>
                     </div>                    
                     <div style="float: right">
-                        <h6><a ng-href="{{tl.mediaUrl}}" target="_blank" class="btn btn-xs btn-primary">View in Instagram</a></h6>
+                        <h6>
+							<span ng-if="typeof tl.mediaType != 'undefined'" class="btn btn-xs btn-primary" style="margin-right: 15px">{{tl.mediaType}}</span>
+							<a ng-href="{{tl.mediaUrl}}" target="_blank" class="btn btn-xs btn-primary">View in Instagram</a>
+						</h6>
                     </div>
                     <div style="clear: both"></div>
                     <div ng-if="showAllInstagramMedia && tl.showMedia">
