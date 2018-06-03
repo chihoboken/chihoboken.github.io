@@ -11,7 +11,7 @@
 				{key: "tl", value: "Timelapse"},
 				{key: "fw", value: "Fireworks"},
 			],
-			selectedView: "fw"
+			selectedView: null;
 			
 			//filteredCity: ""
 		});
@@ -1028,5 +1028,7 @@
 			  $scope.allCities.push(value.mediaLocationCity);
 			}
 		});
+		
+		$scope.selectedView = "fw";
   }]
   );
