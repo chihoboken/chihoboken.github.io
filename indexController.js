@@ -1015,7 +1015,7 @@
 		};
 
 		$scope.$watch('selectedView', function(newValue, oldValue){
-			if (typeof newValue != "undefined") {
+			if (typeof newValue != "undefined" && newValue !== oldValue) {
 				$scope.pictureList = photosAndVideos[newValue];
 				setTimeout(function(){
 					window.instgrm.Embeds.process();
