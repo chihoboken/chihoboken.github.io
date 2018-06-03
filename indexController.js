@@ -11,7 +11,7 @@
 				{key: "tl", value: "Timelapse"},
 				{key: "fw", value: "Fireworks"},
 			],
-			selectedView: null;
+			selectedView: null,
 			
 			//filteredCity: ""
 		});
