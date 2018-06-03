@@ -2,17 +2,26 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-    <title>chihoboken Photo Showroom</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <title>chihoboken - Photo Gallery</title>
+	
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-	<script src="////cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
-
+	<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
+	<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+	
+	<!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+    <!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"-->
+	<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script-->
+    <!--script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script-->
+    <!--script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script-->
+	<!--script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script-->
+	<!--script async defer src="http://platform.instagram.com/en_US/embeds.js"></script-->
+	
     <script src="indexController.js"></script>
-    <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>    
-
+	
     <style type="text/css">
         .row {
             display: flex;
@@ -21,7 +30,7 @@
 
         .timelapsecontainer {
             padding: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
             .timelapsecontainer:hover {
                 background-color: #e2d291;
@@ -48,11 +57,16 @@
 <body ng-app="chihobPhotoShowroom">
     <div ng-controller="indexController">
         <h2 style="text-align: center; margin: 15px">{{appTitle}}</h2>
-        <h4 style="text-align: center; margin: 15px">{{pictureList.length}} Photos & Videos as of {{siteLastUpdated}}</h4>
+		<h3 style="text-align: center; margin: 15px">
+			<select style="width: 320px" ng-model="selectedView">
+			  <option ng-repeat="v in allViews" value="{{v.key}}">{{v.value}}</option>
+			</select>
+		</h3>
+        <h4 style="text-align: center; margin: 15px">{{pictureList.length}} Photos & Videos - Last Updated: {{siteLastUpdated}}</h4>
         <h4 style="text-align: center; margin: 15px; display: none">Filter video by location: <select style="width: 250px" ng-model="filteredCity" ng-options="city as city for city in allCities"></select></h4>
         <div class="container" style="width: 90% !important">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 timelapsecontainer" ng-if="tl.showBlock" ng-repeat="tl in pictureList | filter: {mediaLocationCity: filteredCity}">
+                <div class="col-lg-3 col-md-3 col-sm-12 timelapsecontainer" ng-if="tl.showBlock" ng-repeat="tl in pictureList | filter: {mediaLocationCity: filteredCity}">
                     <h4>{{tl.mediaLocationDetail}}</h4>
                     <div style="float: left">
                         <h6>{{tl.mediaLocationCity}}, {{tl.mediaLocationState}} - {{tl.mediaDate}}</h6>
