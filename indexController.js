@@ -1029,6 +1029,8 @@
 			}
 		});
 		
-		$scope.selectedView = "fw";
+		setTimeout(function(){
+			$scope.selectedView = "fw";
+		}, 500);		
   }]
   );
