@@ -11,7 +11,7 @@
 				{key: "tl", value: "Timelapse"},
 				{key: "fw", value: "Fireworks"},
 			],
-			selectedView: null,
+			selectedView: "fw",
 			
 			//filteredCity: ""
 		});
@@ -1013,9 +1013,11 @@
 				}			
 			]
 		};
+		
+		$scope.pictureList = photosAndVideos[$scope.selectedView];
 
 		$scope.$watch('selectedView', function(newValue, oldValue){
-			if (typeof newValue != "undefined" && newValue !== oldValue && !isInitializing) {
+			if (typeof newValue != "undefined" && newValue !== oldValue) {
 				$scope.pictureList = photosAndVideos[newValue];
 				setTimeout(function(){
 					window.instgrm.Embeds.process();
@@ -1029,10 +1031,10 @@
 			}
 		});
 		
-		var isInitializing = true;
-		setTimeout(function() {
-			isInitializing = false;
-			$scope.selectedView = "fw";			
-		}, 500);		
+		//var isInitializing = true;
+		//setTimeout(function() {
+		//	isInitializing = false;
+		//	$scope.selectedView = "fw";			
+		//}, 500);		
   }]
   );
