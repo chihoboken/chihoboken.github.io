@@ -2,7 +2,7 @@
 	.controller('indexController', ['$scope', function ($scope) {
 		_.merge($scope, {
 			appTitle: "chihoboken - Photo Gallery",
-			siteLastUpdated: "06/03/2018",
+			siteLastUpdated: "12/02/2018",
 			showAllInstagramMedia: true, // false For Debug
 			pictureList: [],
 			allCities: [],
@@ -10,9 +10,9 @@
 			allViews: [
 				{key: "tl", value: "Timelapse"},
 				{key: "fw", value: "Fireworks"},
-				{key: "sr", value: "Sunrise"},
+				{key: "sr18", value: "Sunrise 2018"},
 			],
-			selectedView: "sr",
+			selectedView: "sr18",
 			
 			//filteredCity: ""
 		});
@@ -1013,7 +1013,7 @@
 					showMedia: true
 				}
 			],
-			sr: [
+			sr18: [
 				{
 					mediaUrl: "https://www.instagram.com/p/Bq2KU8wF-v0/",
 					mediaLocationDetail: "Maxwell Park",
