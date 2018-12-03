@@ -12,7 +12,7 @@
 				{key: "fw", value: "Fireworks"},
 				{key: "sr", value: "Sunrise"},
 			],
-			selectedView: "fw",
+			selectedView: "sr",
 			
 			//filteredCity: ""
 		});
@@ -1115,16 +1115,6 @@
 					showMedia: true
 				},
 				{
-					mediaUrl: "https://www.instagram.com/p/BlFsx3fh00m/",
-					mediaLocationDetail: "Maxwell Park",
-					mediaLocationCity: "Hoboken",
-					mediaLocationState: "NJ",
-					mediaDate: "07/11/2018",
-					mediaType: "Photo",
-					showBlock: true,
-					showMedia: true
-				},
-				{
 					mediaUrl: "https://www.instagram.com/p/BiEimrNB8OO/",
 					mediaLocationDetail: "Maxwell Park",
 					mediaLocationCity: "Hoboken",
@@ -1150,16 +1140,6 @@
 					mediaLocationCity: "Hoboken",
 					mediaLocationState: "NJ",
 					mediaDate: "04/24/2018",
-					mediaType: "Photo",
-					showBlock: true,
-					showMedia: true
-				},
-				{
-					mediaUrl: "https://www.instagram.com/p/BhWSPyeA9lU/",
-					mediaLocationDetail: "Maxwell Park",
-					mediaLocationCity: "Hoboken",
-					mediaLocationState: "NJ",
-					mediaDate: "04/09/2018",
 					mediaType: "Photo",
 					showBlock: true,
 					showMedia: true
