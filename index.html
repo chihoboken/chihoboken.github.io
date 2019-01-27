@@ -58,6 +58,7 @@
     <div ng-controller="indexController">
         <h2 style="text-align: center; margin: 15px">{{appTitle}}</h2>
 		<h3 style="text-align: center; margin: 15px">
+			Current Gallery: 
 			<select style="width: 320px" ng-model="selectedView">
 			  <option ng-repeat="v in allViews" value="{{v.key}}">{{v.value}}</option>
 			</select>

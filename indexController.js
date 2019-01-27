@@ -2,7 +2,7 @@
 	.controller('indexController', ['$scope', function ($scope) {
 		_.merge($scope, {
 			appTitle: "chihoboken - Photo Gallery",
-			siteLastUpdated: "12/02/2018",
+			siteLastUpdated: "01/27/2019",
 			showAllInstagramMedia: true, // false For Debug
 			pictureList: [],
 			allCities: [],
@@ -11,8 +11,9 @@
 				{key: "tl", value: "Timelapse"},
 				{key: "fw", value: "Fireworks"},
 				{key: "sr18", value: "Sunrise 2018"},
+				{key: "sr19", value: "Sunrise 2019"},
 			],
-			selectedView: "sr18",
+			selectedView: "sr19",
 			
 			//filteredCity: ""
 		});
@@ -1013,7 +1014,39 @@
 					showMedia: true
 				}
 			],
+			sr19: [
+				{
+					mediaUrl: "https://www.instagram.com/p/BtI-FV9l2uh/",
+					mediaLocationDetail: "Maxwell Park",
+					mediaLocationCity: "Hoboken",
+					mediaLocationState: "NJ",
+					mediaDate: "01/27/2019",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/BsvKmseleNT/",
+					mediaLocationDetail: "Maxwell Park",
+					mediaLocationCity: "Hoboken",
+					mediaLocationState: "NJ",
+					mediaDate: "01/17/2019",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				}
+			],
 			sr18: [
+				{
+					mediaUrl: "https://www.instagram.com/p/BrnEeVlFPqd/",
+					mediaLocationDetail: "Pier 13",
+					mediaLocationCity: "Hoboken",
+					mediaLocationState: "NJ",
+					mediaDate: "12/20/2018",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
 				{
 					mediaUrl: "https://www.instagram.com/p/Bq2KU8wF-v0/",
 					mediaLocationDetail: "Maxwell Park",
