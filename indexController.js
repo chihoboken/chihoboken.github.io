@@ -1,8 +1,8 @@
 ﻿angular.module('chihobPhotoShowroom', [])
 	.controller('indexController', ['$scope', function ($scope) {
 		_.merge($scope, {
-			appTitle: "chihoboken - Photo Gallery",
-			siteLastUpdated: "01/27/2019",
+			appTitle: "chihoboken - Editor's Pick",
+			siteLastUpdated: "10/29/2021",
 			showAllInstagramMedia: true, // false For Debug
 			pictureList: [],
 			allCities: [],
@@ -12,8 +12,9 @@
 				{key: "fw", value: "Fireworks"},
 				{key: "sr18", value: "Sunrise 2018"},
 				{key: "sr19", value: "Sunrise 2019"},
+				{key: "moon", value: "Moon"},
 			],
-			selectedView: "sr19",
+			selectedView: "moon",
 			
 			//filteredCity: ""
 		});
@@ -1267,7 +1268,209 @@
 					showBlock: true,
 					showMedia: true
 				},
-			]
+			],
+			moon: [
+				{
+					mediaUrl: "https://www.instagram.com/p/CVRsm8NMBUC/",
+					mediaLocationDetail: "Frank Sinatra Drive",
+					mediaLocationCity: "Hoboken",
+					mediaLocationState: "NJ",
+					mediaDate: "10/20/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CVOxsD2MIsV/",
+					mediaLocationDetail: "Downtown",
+					mediaLocationCity: "Harrison",
+					mediaLocationState: "NJ",
+					mediaDate: "10/19/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CVMNLY0sWG7/",
+					mediaLocationDetail: "The Heights",
+					mediaLocationCity: "Jersey City",
+					mediaLocationState: "NJ",
+					mediaDate: "10/18/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CVJybo5MgPj/",
+					mediaLocationDetail: "Secaucus Junction",
+					mediaLocationCity: "Secaucus",
+					mediaLocationState: "NJ",
+					mediaDate: "10/17/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CUEURP3MTCV/",
+					mediaLocationDetail: "New York Avenue",
+					mediaLocationCity: "Jersey City",
+					mediaLocationState: "NJ",
+					mediaDate: "09/20/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CUBapQysd5-/",
+					mediaLocationDetail: "Paul Amico Way",
+					mediaLocationCity: "Secaucus",
+					mediaLocationState: "NJ",
+					mediaDate: "09/19/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CT_MMoeMC-p/",
+					mediaLocationDetail: "Rt 495",
+					mediaLocationCity: "Union City",
+					mediaLocationState: "NJ",
+					mediaDate: "09/18/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CTBeAcdsAxl/",
+					mediaLocationDetail: "The Heights",
+					mediaLocationCity: "Jersey City",
+					mediaLocationState: "NJ",
+					mediaDate: "08/25/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CSs242ODRkz/",
+					mediaLocationDetail: "Little Island",
+					mediaLocationCity: "New York",
+					mediaLocationState: "NY",
+					mediaDate: "08/17/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CQhyu8DjJK6/",
+					mediaLocationDetail: "Pier C Park",
+					mediaLocationCity: "Hoboken",
+					mediaLocationState: "NJ",
+					mediaDate: "06/24/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CQfLgwxDdDg/",
+					mediaLocationDetail: "Secaucus Junction",
+					mediaLocationCity: "Secaucus",
+					mediaLocationState: "NJ",
+					mediaDate: "06/23/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CQcnrukj1SM/",
+					mediaLocationDetail: "Hamilton Park",
+					mediaLocationCity: "Weehawken",
+					mediaLocationState: "NJ",
+					mediaDate: "06/22/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CPUXVXYDmZC/",
+					mediaLocationDetail: "Palisade Avenue",
+					mediaLocationCity: "Union City",
+					mediaLocationState: "NJ",
+					mediaDate: "05/25/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/COJtLW8D_Bb/",
+					mediaLocationDetail: "Manhattan Avenue",
+					mediaLocationCity: "Union City",
+					mediaLocationState: "NJ",
+					mediaDate: "04/26/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CM5h1z0jZVD/",
+					mediaLocationDetail: "14th Street",
+					mediaLocationCity: "Hoboken",
+					mediaLocationState: "NJ",
+					mediaDate: "03/26/2021",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CJfI25fj9Gl/",
+					mediaLocationDetail: "Frank Sinatra Park",
+					mediaLocationCity: "Hoboken",
+					mediaLocationState: "NJ",
+					mediaDate: "12/31/2020",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CIJqbcjjCBJ/",
+					mediaLocationDetail: "Pier C Park",
+					mediaLocationCity: "Hoboken",
+					mediaLocationState: "NJ",
+					mediaDate: "11/28/2020",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CF0wGuhjz4j/",
+					mediaLocationDetail: "Maxwell Place",
+					mediaLocationCity: "Hoboken",
+					mediaLocationState: "NJ",
+					mediaDate: "10/01/2020",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/CFyRLasDxtC/",
+					mediaLocationDetail: "Manhattan Avenue",
+					mediaLocationCity: "Union City",
+					mediaLocationState: "NJ",
+					mediaDate: "09/30/2020",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+				{
+					mediaUrl: "https://www.instagram.com/p/B9iSw9JnPBd/",
+					mediaLocationDetail: "Stevens Institute of Technology",
+					mediaLocationCity: "Hoboken",
+					mediaLocationState: "NJ",
+					mediaDate: "03/09/2020",
+					mediaType: "Photo",
+					showBlock: true,
+					showMedia: true
+				},
+			],
 		};
 		
 		$scope.pictureList = photosAndVideos[$scope.selectedView];
